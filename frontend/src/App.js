@@ -1,10 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-<<<<<<< HEAD
 //deneme2 
-=======
->>>>>>> main
 function App() {
   return (
     <div className="App">
