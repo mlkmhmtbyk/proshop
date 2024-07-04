@@ -5,6 +5,7 @@ import './App.css';
 //main değişiklik 2
 //bu alanı değiştirmem gerekiyor deneme branchinde çalışıyorum
 //bu sırada main branchde değişiklik oldu
+//yeni değişiklik
 function App() {
   return (
     <div className="App">
