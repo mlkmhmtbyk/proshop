@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+//değişiklik 2
 //bu alanı değiştirmem gerekiyor deneme branchinde çalışıyorum
 //bu sırada main branchde değişiklik oldu
 function App() {
