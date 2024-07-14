@@ -33,7 +33,7 @@ const ProductScreen = () => {
   } = useGetProductDetailsQuery(productId);
 
   const addToCartHandler = () => {
-    dispatch(addToCart({ productId, qty }));
+    dispatch(addToCart({ ...product, qty }));
     navigate("/cart");
   };
 
@@ -66,7 +66,7 @@ const ProductScreen = () => {
                 />
               </ListGroup.Item>
               <ListGroup.Item>Price:${product.price}</ListGroup.Item>
-              <ListGroup.Item>Decription:${product.description}</ListGroup.Item>
+              <ListGroup.Item>Decription: {product.description}</ListGroup.Item>
             </ListGroup>
           </Col>
           <Col md={3}>
