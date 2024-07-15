@@ -33,10 +33,10 @@ const addOrderItems = asyncHandler(async (req, res) => {
       shippingPrice,
       totalPrice,
     });
-  }
+    const createdOrder = await order.save();
 
-  const createdOrder = await order.save();
-  res.status(201).json(createdOrder);
+    res.status(201).json(createdOrder);
+  }
 });
 
 //@desc Get logged in user orders
