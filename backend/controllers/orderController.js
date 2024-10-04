@@ -1,5 +1,6 @@
 import asyncHandler from "../middleware/asyncHandler.js";
 import Order from "../models/orderModel.js";
+import CreateIyziPayment from "../utils/iyzipay.js";
 
 //@desc Create new order
 //@route POST /api/orders
@@ -68,7 +69,7 @@ const getOrderById = asyncHandler(async (req, res) => {
 //@route GET /api/orders/:id/pay
 //@access Private
 const updateOrderToPaid = asyncHandler(async (req, res) => {
-  res.send("update order to paid");
+  CreateIyziPayment(req, res);
 });
 
 //@desc Update order to delivered
